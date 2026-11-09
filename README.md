@@ -20,7 +20,7 @@ The glasses run Web Apps from an HTTPS address, so it works the same whether the
 3. Open Influence from the glasses' apps.
 
 The Find card and `/live/` follow the phone whose seeker id is `phone` unless the address says otherwise: add
-`?seeker=<id>` (the id spike-rayban's seek shows in its Seeker field) to the Web App's address and to `/live/`'s, and
+`?seeker=<id>` (the id hero-goggles-ios's seek shows in its Seeker field) to the Web App's address and to `/live/`'s, and
 each remembers it.
 
 ## Building for the display
