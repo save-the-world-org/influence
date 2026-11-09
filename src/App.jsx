@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 
 // Ray-Ban Display gives a Web App arrow keys and Enter from the touchpad and the
 // Neural Band. The browser moves focus between real buttons and Enter fires a
@@ -39,9 +39,10 @@ export default function App() {
   )
 }
 
+// The glasses move focus from wherever it is, so each screen focuses its first control as it mounts.
 function useAutoFocus() {
   const ref = useRef(null)
-  useEffect(() => ref.current?.focus(), [])
+  useLayoutEffect(() => ref.current?.focus(), [])
   return ref
 }
 

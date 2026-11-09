@@ -4,20 +4,9 @@
 
 @font-face {
   font-family: 'Syncopate';
-  src: url('/fonts/Syncopate-Bold.ttf') format('truetype');
+  /* Syncopate Bold cut to capitals, digits, ':', '.' and space (about 3 KB): the wordmark, titles and clock. */
+  src: url('/fonts/syncopate-700-sub.woff2') format('woff2');
   font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Google Sans Flex';
-  src: url('/fonts/GoogleSansFlex_24pt-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Google Sans Flex';
-  src: url('/fonts/GoogleSansFlex_24pt-SemiBold.ttf') format('truetype');
-  font-weight: 600;
   font-display: swap;
 }
 
@@ -38,7 +27,7 @@ html, body, #root {
   height: 100%;
   background: var(--ground);
   color: var(--light);
-  font-family: 'Google Sans Flex', system-ui, sans-serif;
+  font-family: system-ui, -apple-system, 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
