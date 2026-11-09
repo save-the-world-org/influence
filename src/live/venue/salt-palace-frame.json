@@ -1,0 +1,27 @@
+{
+  "viewBox": [
+    0,
+    0,
+    1000,
+    980
+  ],
+  "corners": {
+    "nw": {
+      "lat": 40.7695041,
+      "lon": -111.899882
+    },
+    "ne": {
+      "lat": 40.7695041,
+      "lon": -111.8937809
+    },
+    "se": {
+      "lat": 40.764977,
+      "lon": -111.8937809
+    },
+    "sw": {
+      "lat": 40.764977,
+      "lon": -111.899882
+    }
+  },
+  "source": "OpenStreetMap way 33149360, (c) OpenStreetMap contributors, ODbL 1.0"
+}
