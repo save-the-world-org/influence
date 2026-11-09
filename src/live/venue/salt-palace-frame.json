@@ -1,0 +1,241 @@
+{
+ "svg": "salt-palace-outline.svg",
+ "viewBox": [
+  0,
+  0,
+  473.8,
+  463.4
+ ],
+ "units": "1 SVG unit is about 1 metre",
+ "orientation": "north up",
+ "projection": "equirectangular around the building: x is linear in longitude, y is linear in latitude",
+ "corners": {
+  "nw": {
+   "lat": 40.769326973633724,
+   "lon": -111.8996389660235
+  },
+  "ne": {
+   "lat": 40.769326973633724,
+   "lon": -111.8940239339765
+  },
+  "sw": {
+   "lat": 40.765154126366276,
+   "lon": -111.8996389660235
+  },
+  "se": {
+   "lat": 40.765154126366276,
+   "lon": -111.8940239339765
+  }
+ },
+ "bounds": {
+  "west": -111.8996389660235,
+  "east": -111.8940239339765,
+  "south": 40.765154126366276,
+  "north": 40.769326973633724
+ },
+ "toSvg": "x = (lon - west) / (east - west) * viewBox[2]; y = (north - lat) / (north - south) * viewBox[3]",
+ "padding_m": 15.0,
+ "building": {
+  "osm": "way/33149360",
+  "centre": {
+   "lat": 40.767437,
+   "lon": -111.8962966,
+   "svg": {
+    "x": 282.0,
+    "y": 209.9
+   }
+  },
+  "svg_bbox": [
+   15.0,
+   15.0,
+   458.8,
+   448.4
+  ]
+ },
+ "halls": [
+  {
+   "name": "Halls 4-5",
+   "kind": "expo",
+   "level": 1,
+   "side": "west end of the west wing (toward 300 West)",
+   "approx": true,
+   "centre": {
+    "lat": 40.768065,
+    "lon": -111.898885
+   },
+   "bounds": {
+    "south": 40.7675,
+    "west": -111.8995,
+    "north": 40.76863,
+    "east": -111.89827
+   },
+   "svg": {
+    "x": 63.6,
+    "y": 140.1
+   },
+   "notes": "Cosmic Canyon zone: CNCF Project Pavilion, Poster Pavilion, start-up booths, Corner Store (t-shirts), meal pick-up"
+  },
+  {
+   "name": "Hall 3",
+   "kind": "expo",
+   "level": 1,
+   "side": "west wing, middle",
+   "approx": true,
+   "centre": {
+    "lat": 40.768065,
+    "lon": -111.897945
+   },
+   "bounds": {
+    "south": 40.7675,
+    "west": -111.89827,
+    "north": 40.76863,
+    "east": -111.89762
+   },
+   "svg": {
+    "x": 142.9,
+    "y": 140.1
+   },
+   "notes": "Amber Hive zone: silver booths (2xx-3xx), exhibitor services desk"
+  },
+  {
+   "name": "Hall 2",
+   "kind": "expo",
+   "level": 1,
+   "side": "west wing, east of Hall 3",
+   "approx": true,
+   "centre": {
+    "lat": 40.768135,
+    "lon": -111.89726
+   },
+   "bounds": {
+    "south": 40.76787,
+    "west": -111.89762,
+    "north": 40.7684,
+    "east": -111.8969
+   },
+   "svg": {
+    "x": 200.7,
+    "y": 132.4
+   },
+   "notes": "Honeycomb Hub zone: silver booths (19x-2xx); secondary entrance on the north side"
+  },
+  {
+   "name": "Hall 1",
+   "kind": "expo",
+   "level": 1,
+   "side": "junction of the west wing and the main block (old 200 West line)",
+   "approx": true,
+   "centre": {
+    "lat": 40.768245,
+    "lon": -111.896545
+   },
+   "bounds": {
+    "south": 40.76787,
+    "west": -111.8969,
+    "north": 40.76862,
+    "east": -111.89619
+   },
+   "svg": {
+    "x": 261.1,
+    "y": 120.2
+   },
+   "notes": "Alpine Overlook zone: platinum and gold booths (15x-19x), Demo Theater, Network Nook; secondary entrance on the north side"
+  },
+  {
+   "name": "Halls A-C",
+   "kind": "expo",
+   "level": 1,
+   "side": "main block, west half, north of Hall DE (C south, B middle, A north)",
+   "approx": true,
+   "centre": {
+    "lat": 40.767115,
+    "lon": -111.89598
+   },
+   "bounds": {
+    "south": 40.76643,
+    "west": -111.89652,
+    "north": 40.7678,
+    "east": -111.89544
+   },
+   "svg": {
+    "x": 308.7,
+    "y": 245.6
+   },
+   "notes": "Starlight Summit + Astral Peak zones: diamond and platinum sponsor booths (100-15x); Showcase main entrance on the east side, off the lower concourse"
+  },
+  {
+   "name": "Hall DE",
+   "kind": "keynote",
+   "level": 1,
+   "side": "main block, west half, south end (toward 200 South)",
+   "approx": true,
+   "centre": {
+    "lat": 40.765965,
+    "lon": -111.89598
+   },
+   "bounds": {
+    "south": 40.7655,
+    "west": -111.89652,
+    "north": 40.76643,
+    "east": -111.89544
+   },
+   "svg": {
+    "x": 308.7,
+    "y": 373.4
+   },
+   "notes": "Keynotes"
+  },
+  {
+   "name": "Grand Ballroom",
+   "kind": "sessions",
+   "level": 1,
+   "side": "main block, east side along West Temple, north of the Hyatt",
+   "approx": true,
+   "centre": {
+    "lat": 40.766475,
+    "lon": -111.8949
+   },
+   "bounds": {
+    "south": 40.7661,
+    "west": -111.8952,
+    "north": 40.76685,
+    "east": -111.8946
+   },
+   "svg": {
+    "x": 399.9,
+    "y": 316.7
+   },
+   "notes": "Breakout rooms ACE, BDF, GI, H, J"
+  }
+ ],
+ "pois": [
+  {
+   "name": "Registration and badge pick-up (200 South Entrance)",
+   "lat": 40.7652745,
+   "lon": -111.8956557,
+   "approx": false,
+   "source": "official pin: Google My Maps mid=17D29-f7uLLhY9xe5G6HcK0yByoRPMOs (also in the Sessionize 'Location Map' answer)",
+   "svg": {
+    "x": 336.1,
+    "y": 450.0
+   }
+  },
+  {
+   "name": "Hyatt Regency (attached hotel; more session rooms on levels 2-5)",
+   "lat": 40.76565,
+   "lon": -111.8947,
+   "approx": true,
+   "source": "approx: outside the OSM polygon, in the notch at 200 South and West Temple",
+   "svg": {
+    "x": 416.8,
+    "y": 408.3
+   }
+  }
+ ],
+ "sources": {
+  "outline": "https://api.openstreetmap.org/api/0.6/way/33149360/full.json ((c) OpenStreetMap contributors, ODbL)",
+  "venue_map": "https://events.linuxfoundation.org/kcna26-venue-map -> https://events.linuxfoundation.org/wp-content/uploads/2026/10/KCNA26-VenueMap-118x96-3.pdf",
+  "expo_map": "https://events.linuxfoundation.org/kcna26-expo-map -> https://events.linuxfoundation.org/wp-content/uploads/2026/11/KCNA26-ExpoHallMap_Digital.pdf",
+  "note": "Both official maps are drawn with west at the top (West Temple along the bottom). Hall boxes are approximate."
+ }
+}

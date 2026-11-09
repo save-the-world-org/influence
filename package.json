@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "maplibre-gl": "^5.24.0",
     "preact": "^10.27.0"
   },
   "devDependencies": {

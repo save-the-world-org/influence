@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 473.8 463.4" width="474" height="463" style="color:#E8EEF5" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">
+<title>Salt Palace Convention Center</title>
+<desc>North up. Outline: OpenStreetMap way 33149360 (c) OpenStreetMap contributors, ODbL. Hall boxes and labels are approximate, from the official KubeCon + CloudNativeCon NA 2026 venue and expo maps. 1 unit is about 1 m; see salt-palace-frame.json for the lat/lon of the corners.</desc>
+<defs><clipPath id="sp-clip"><polygon points="277.9,435.2 377.3,436.6 377.2,439.4 380.1,439.4 380.2,448.4 388.5,448.4 388.9,436.6 389.5,434.8 390.4,433.6 392.7,435.8 392.0,437.6 392.0,439.5 392.7,441.4 393.9,442.9 395.5,444.0 397.3,444.5 399.2,444.3 401.0,443.6 402.5,442.2 403.4,440.7 403.8,438.5 403.4,436.7 402.5,435.0 401.1,433.7 399.3,432.9 399.3,431.4 392.6,431.4 392.5,363.4 425.2,363.6 425.2,358.3 448.6,358.4 448.3,270.1 454.4,269.9 453.6,247.4 446.4,247.5 445.8,245.3 447.0,245.7 449.6,245.7 451.7,245.1 453.7,243.7 455.2,241.8 456.1,239.3 456.1,236.6 455.1,234.1 453.4,232.1 451.0,230.8 448.4,230.4 445.8,230.8 443.5,232.2 442.5,233.1 441.8,234.2 440.3,232.8 441.2,228.0 447.4,218.2 451.1,209.9 453.1,198.0 450.2,198.1 449.5,190.9 448.8,188.8 452.1,188.3 455.0,186.7 457.2,184.3 458.5,181.2 458.8,178.0 458.0,174.8 456.2,172.0 453.5,170.0 450.4,169.0 448.8,169.0 448.7,153.2 448.7,151.2 429.5,150.7 429.2,140.8 418.2,151.5 391.8,151.5 391.5,139.6 374.8,139.7 374.8,137.1 340.1,136.9 332.7,125.6 329.8,114.7 330.4,15.0 263.0,15.3 263.8,70.6 263.8,75.9 258.0,75.9 212.8,75.8 15.0,75.7 16.1,124.6 16.6,141.7 70.7,142.7 70.4,196.4 94.3,196.5 98.5,196.5 98.6,202.5 215.0,202.7 214.9,180.3 269.2,179.6 268.7,190.0 277.7,190.1"/></clipPath></defs>
+<polygon class="building" points="277.9,435.2 377.3,436.6 377.2,439.4 380.1,439.4 380.2,448.4 388.5,448.4 388.9,436.6 389.5,434.8 390.4,433.6 392.7,435.8 392.0,437.6 392.0,439.5 392.7,441.4 393.9,442.9 395.5,444.0 397.3,444.5 399.2,444.3 401.0,443.6 402.5,442.2 403.4,440.7 403.8,438.5 403.4,436.7 402.5,435.0 401.1,433.7 399.3,432.9 399.3,431.4 392.6,431.4 392.5,363.4 425.2,363.6 425.2,358.3 448.6,358.4 448.3,270.1 454.4,269.9 453.6,247.4 446.4,247.5 445.8,245.3 447.0,245.7 449.6,245.7 451.7,245.1 453.7,243.7 455.2,241.8 456.1,239.3 456.1,236.6 455.1,234.1 453.4,232.1 451.0,230.8 448.4,230.4 445.8,230.8 443.5,232.2 442.5,233.1 441.8,234.2 440.3,232.8 441.2,228.0 447.4,218.2 451.1,209.9 453.1,198.0 450.2,198.1 449.5,190.9 448.8,188.8 452.1,188.3 455.0,186.7 457.2,184.3 458.5,181.2 458.8,178.0 458.0,174.8 456.2,172.0 453.5,170.0 450.4,169.0 448.8,169.0 448.7,153.2 448.7,151.2 429.5,150.7 429.2,140.8 418.2,151.5 391.8,151.5 391.5,139.6 374.8,139.7 374.8,137.1 340.1,136.9 332.7,125.6 329.8,114.7 330.4,15.0 263.0,15.3 263.8,70.6 263.8,75.9 258.0,75.9 212.8,75.8 15.0,75.7 16.1,124.6 16.6,141.7 70.7,142.7 70.4,196.4 94.3,196.5 98.5,196.5 98.6,202.5 215.0,202.7 214.9,180.3 269.2,179.6 268.7,190.0 277.7,190.1" fill="currentColor" fill-opacity="0.05" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+<g class="halls" clip-path="url(#sp-clip)" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 5" stroke-opacity="0.5">
+<rect data-hall="Halls 4-5" data-approx="true" x="11.7" y="77.4" width="103.8" height="125.5" fill="currentColor" fill-opacity="0.10"><title>Halls 4-5</title></rect>
+<rect data-hall="Hall 3" data-approx="true" x="115.5" y="77.4" width="54.8" height="125.5" fill="currentColor" fill-opacity="0.10"><title>Hall 3</title></rect>
+<rect data-hall="Hall 2" data-approx="true" x="170.4" y="102.9" width="60.8" height="58.9" fill="currentColor" fill-opacity="0.10"><title>Hall 2</title></rect>
+<rect data-hall="Hall 1" data-approx="true" x="231.1" y="78.5" width="59.9" height="83.3" fill="currentColor" fill-opacity="0.10"><title>Hall 1</title></rect>
+<rect data-hall="Halls A-C" data-approx="true" x="263.2" y="169.6" width="91.1" height="152.1" fill="currentColor" fill-opacity="0.10"><title>Halls A-C</title></rect>
+<rect data-hall="Hall DE" data-approx="true" x="263.2" y="321.7" width="91.1" height="103.3" fill="none"><title>Hall DE</title></rect>
+<rect data-hall="Grand Ballroom" data-approx="true" x="374.6" y="275.1" width="50.6" height="83.3" fill="none"><title>Grand Ballroom</title></rect>
+</g>
+<g class="labels" fill="currentColor">
+<text x="138.3" y="102.9" font-size="22" font-weight="600" dominant-baseline="middle">Expo · Halls 1–5</text>
+<text class="section" x="96.1" y="158.5" font-size="14" fill-opacity="0.7" dominant-baseline="middle">4–5</text>
+<text class="section" x="142.5" y="158.5" font-size="14" fill-opacity="0.7" dominant-baseline="middle">3</text>
+<text class="section" x="200.7" y="141.8" font-size="14" fill-opacity="0.7" dominant-baseline="middle">2</text>
+<text class="section" x="260.6" y="141.8" font-size="14" fill-opacity="0.7" dominant-baseline="middle">1</text>
+<text x="308.7" y="234.6" font-size="16" fill-opacity="0.8" dominant-baseline="middle">Expo</text>
+<text x="308.7" y="256.6" font-size="22" font-weight="600" dominant-baseline="middle">A–C</text>
+<text x="308.7" y="362.4" font-size="16" fill-opacity="0.8" dominant-baseline="middle">Keynote</text>
+<text x="308.7" y="384.4" font-size="22" font-weight="600" dominant-baseline="middle">DE</text>
+<text x="399.9" y="316.7" font-size="16" dominant-baseline="middle" transform="rotate(-90 399.9 316.7)">Ballroom</text>
+</g>
+<g class="poi"><circle cx="336.1" cy="450.0" r="4" fill="currentColor"/><text x="328.1" y="450.0" font-size="13" fill="currentColor" fill-opacity="0.8" text-anchor="end" dominant-baseline="middle">Badges</text></g>
+<g class="north" fill="currentColor" fill-opacity="0.7"><path d="M 20 34 L 26 18 L 32 34 L 26 30 Z"/><text x="26" y="48" font-size="12">N</text></g>
+</svg>

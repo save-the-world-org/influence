@@ -1,4 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import Find from './Find.jsx'
 
 // Ray-Ban Display gives a Web App arrow keys and Enter from the touchpad and the
 // Neural Band. The browser moves focus between real buttons and Enter fires a
@@ -7,6 +8,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 // The host allows five history entries in all, so at most one is pushed at a time.
 
 const CARDS = [
+  { id: 'find', title: 'Find', hint: 'Who you seek' },
   { id: 'hello', title: 'Hello', hint: 'Say hi' },
   { id: 'now', title: 'Now', hint: 'Time and date' },
   { id: 'about', title: 'About', hint: 'What this is' },
@@ -14,7 +16,7 @@ const CARDS = [
 
 export default function App() {
   const [view, setView] = useState('home')
-  const lastCard = useRef('hello')
+  const lastCard = useRef('find')
 
   useEffect(() => {
     const onPop = () => setView('home')
@@ -35,6 +37,7 @@ export default function App() {
       {view === 'hello' && <Hello onBack={back} />}
       {view === 'now' && <Now onBack={back} />}
       {view === 'about' && <About onBack={back} />}
+      {view === 'find' && <Find onBack={back} />}
     </main>
   )
 }

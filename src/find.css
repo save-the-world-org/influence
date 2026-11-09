@@ -1,0 +1,19 @@
+/* Find, in the lens: light on black, big and few. */
+.find-name {
+  margin: 0;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  font-size: calc(8 * var(--u));
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.05;
+}
+.find-way { display: flex; align-items: center; gap: calc(4 * var(--u)); }
+.find-arrow { width: calc(20 * var(--u)); height: calc(20 * var(--u)); transition: transform 600ms ease-out; }
+.find-arrow path { fill: var(--green); }
+.find-dist {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  font-size: calc(10 * var(--u));
+  color: var(--green);
+}
