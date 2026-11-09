@@ -26,3 +26,7 @@ The glasses run Web Apps from an HTTPS address, so it works the same whether the
   focus; Enter fires `click`. Don't handle keys yourself, or a press activates twice.
 - Back is `history.back()`. The host allows five history entries, so push at most one per screen.
 - `<meta name="mrbd-web-app-capable" content="yes">` and `application-name` stay in `index.html`.
+- `public/.well-known/meta-wearables-manifest.json` gives the glasses the app's name, icon (a one-colour mask) and
+  colour.
+- Keep the first load under 300 KB and 15 requests: the glasses' link is slow. React runs on `preact/compat`
+  (`vite.config.js`), and the one web font is Syncopate cut to capitals and digits.

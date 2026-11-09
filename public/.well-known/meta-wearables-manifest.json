@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "name": "Influence",
+  "description": "Influence, by Darkshift.",
+  "appearance": {
+    "theme_color": "#3DA992",
+    "icon": { "src": "../brand/Logo_Darkshift_sign_white.svg" }
+  }
+}
