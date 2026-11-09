@@ -75,6 +75,7 @@ export default function LiveMap({ state, me, mySeeker, focus }) {
   const frame = useRef(0)
   const view = useRef({ targetBeacon: null, lineFrom: null, color: '#3DA992' })
   const centred = useRef(false)
+  const fitted = useRef(false)
 
   // Draw what follows the markers: the accuracy circles and the line to the target.
   const drawShapes = () => {
@@ -125,6 +126,7 @@ export default function LiveMap({ state, me, mySeeker, focus }) {
       attributionControl: { compact: true },
     })
     mapRef.current = map
+    if (import.meta.env.DEV) window.__influenceMap = map
     let styled = false
     map.on('style.load', () => {
       styled = true
@@ -172,9 +174,18 @@ export default function LiveMap({ state, me, mySeeker, focus }) {
         g.moveTo(at)
       }
       g.color = b.influencer?.color || '#d9f5f3'
+      g.els[0].style.zIndex = b.id === target?.beaconId ? '3' : '2'
       render(<BeaconPin beacon={b} isTarget={b.id === target?.beaconId} />, g.els[0])
     }
     for (const [id, g] of beacons.current) if (!seen.has(id)) (g.remove(), beacons.current.delete(id))
+    if (!fitted.current && seen.size) {
+      fitted.current = true
+      const pts = state.beacons.filter((b) => b.reading?.estimate).map((b) => [b.reading.estimate.lon, b.reading.estimate.lat])
+      for (const s of state.seekers || []) if (s.lat != null) pts.push([s.lon, s.lat])
+      const bounds = pts.reduce((bb, p) => bb.extend(p), new maplibregl.LngLatBounds(pts[0], pts[0]))
+      const narrow = map.getContainer().clientWidth < 720
+      map.fitBounds(bounds, { padding: narrow ? { top: 170, bottom: 250, left: 50, right: 150 } : { top: 140, bottom: 220, left: 120, right: 280 }, maxZoom: 19, pitch: 50, duration: 1400 })
+    }
 
     // Seekers: the server's, with this phone's own fix laid over its copy so it moves at once.
     const list = (state.seekers || []).filter((s) => s.lat != null && s.lon != null)
