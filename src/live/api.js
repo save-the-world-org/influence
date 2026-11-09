@@ -26,7 +26,17 @@ export const store = {
 
 export const getWriteKey = () => store.get('influence.writeKey')
 export const setWriteKey = (k) => store.set('influence.writeKey', k.trim())
-export const getSeekerId = () => store.get('influence.seeker', 'phone') || 'phone'
+// Which phone this page follows: ?seeker=<id> in the address (the id the seek app shows, such as seeker-1a2b3c),
+// kept for later visits; 'phone' when none was ever given.
+export const getSeekerId = () => {
+  try {
+    const given = new URLSearchParams(window.location.search).get('seeker')?.trim()
+    if (given) store.set('influence.seeker', given)
+  } catch {
+    /* no address to read: keep the stored id */
+  }
+  return store.get('influence.seeker', 'phone') || 'phone'
+}
 
 export async function api(path, { method = 'GET', body, key } = {}) {
   const headers = {}
