@@ -1,5 +1,10 @@
 # Influence
 
+> **Moved, 2026-11-09.** The live map, registry, influencer pages and the glasses' Find card are now
+> [save-the-world-org/hero-goggles](https://github.com/save-the-world-org/hero-goggles), live at
+> https://hero-goggles.darkshift.cloud (and `/live/`). This repo's Product runs no pods; its API is still
+> [influence-api](https://github.com/save-the-world-org/influence-api).
+
 Influence, by Darkshift: a React app for Ray-Ban Display glasses, shipped by Infrared.
 
 ## Run it
