@@ -5,6 +5,18 @@ import './find.css'
 // (one small request, no stream, for the glasses' slow link) and adds no dependency to this entry.
 const API = (import.meta.env.VITE_API_BASE || 'https://influence-api.darkshift.cloud').replace(/\/$/, '')
 
+// Which phone the lens follows: ?seeker=<id> in the Web App's address (as added in Meta AI), kept for later launches;
+// 'phone' when none was ever given.
+function seekerId() {
+  try {
+    const given = new URLSearchParams(window.location.search).get('seeker')?.trim()
+    if (given) localStorage.setItem('influence.seeker', given)
+    return localStorage.getItem('influence.seeker') || 'phone'
+  } catch {
+    return 'phone'
+  }
+}
+
 export default function Find({ onBack }) {
   const [target, setTarget] = useState(undefined) // undefined while loading, null when nobody is sought
   const [offline, setOffline] = useState(false)
@@ -17,7 +29,7 @@ export default function Find({ onBack }) {
     let timer
     const poll = async () => {
       try {
-        const res = await fetch(`${API}/api/target?seeker=phone`, { cache: 'no-store' })
+        const res = await fetch(`${API}/api/target?seeker=${encodeURIComponent(seekerId())}`, { cache: 'no-store' })
         const t = await res.json()
         if (alive) (setTarget(t && t.name ? t : null), setOffline(false))
       } catch {

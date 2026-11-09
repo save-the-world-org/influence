@@ -19,6 +19,10 @@ The glasses run Web Apps from an HTTPS address, so it works the same whether the
 2. App Settings, App connections, Add a Web App, and give it the production address.
 3. Open Influence from the glasses' apps.
 
+The Find card and `/live/` follow the phone whose seeker id is `phone` unless the address says otherwise: add
+`?seeker=<id>` (the id spike-rayban's seek shows in its Seeker field) to the Web App's address and to `/live/`'s, and
+each remembers it.
+
 ## Building for the display
 
 - 600 x 600, additive: black is see-through, so keep the ground black and draw light.
