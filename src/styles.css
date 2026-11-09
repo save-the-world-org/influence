@@ -1,0 +1,151 @@
+/* Ray-Ban Display is a 600 x 600 additive-light display: black is see-through
+   and light colours glow. So the ground is black and everything drawn is light.
+   Sizes come from the viewport, with 600 x 600 as the target. */
+
+@font-face {
+  font-family: 'Syncopate';
+  src: url('/fonts/Syncopate-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Google Sans Flex';
+  src: url('/fonts/GoogleSansFlex_24pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Google Sans Flex';
+  src: url('/fonts/GoogleSansFlex_24pt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+
+:root {
+  --ground: #000;
+  --light: #d9f5f3;   /* Darkshift Light */
+  --green: #3da992;   /* Darkshift Green */
+  --teal: #1b5258;    /* Darkshift Dark Teal */
+  --red: #ff4549;     /* Darkshift Red */
+  --muted: rgba(217, 245, 243, 0.62);
+  --u: min(1vw, 1vh, 6px); /* one hundredth of the square, at most 6px */
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  background: var(--ground);
+  color: var(--light);
+  font-family: 'Google Sans Flex', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.frame {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.screen {
+  width: min(100vw, 100vh, 600px);
+  height: min(100vw, 100vh, 600px);
+  padding: calc(8 * var(--u));
+  display: flex;
+  flex-direction: column;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: calc(3 * var(--u));
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.wordmark, .title {
+  margin: calc(1.5 * var(--u)) 0 0;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+.wordmark { font-size: calc(9 * var(--u)); }
+.title { font-size: calc(7 * var(--u)); }
+
+.lede {
+  margin: calc(3 * var(--u)) 0 0;
+  font-size: calc(5 * var(--u));
+  color: var(--muted);
+}
+
+.cards {
+  margin-top: auto;
+  display: grid;
+  gap: calc(2.5 * var(--u));
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  padding: calc(3 * var(--u)) calc(4 * var(--u));
+  background: transparent;
+  border: calc(0.4 * var(--u)) solid rgba(217, 245, 243, 0.28);
+  border-radius: calc(3 * var(--u));
+  transition: border-color 120ms, background 120ms, transform 120ms;
+}
+.card-title { font-size: calc(5 * var(--u)); font-weight: 600; }
+.card-hint { font-size: calc(3.2 * var(--u)); color: var(--muted); }
+
+.card:focus-visible, .card:focus {
+  border-color: var(--green);
+  background: rgba(61, 169, 146, 0.18);
+  transform: scale(1.02);
+}
+.card:focus .card-hint { color: var(--light); }
+
+.detail .body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: calc(3 * var(--u));
+}
+
+.big { margin: 0; font-size: calc(8 * var(--u)); font-weight: 600; }
+.clock {
+  margin: 0;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  font-size: calc(11 * var(--u));
+  color: var(--green);
+}
+.muted { margin: 0; font-size: calc(4.2 * var(--u)); color: var(--muted); line-height: 1.35; }
+
+.pill {
+  align-self: flex-start;
+  padding: calc(2.2 * var(--u)) calc(6 * var(--u));
+  font-size: calc(4.2 * var(--u));
+  font-weight: 600;
+  background: transparent;
+  border: calc(0.4 * var(--u)) solid var(--green);
+  border-radius: 999px;
+  transition: background 120ms, color 120ms;
+}
+.pill:focus { background: var(--green); color: #000; }
+.pill.ghost { border-color: rgba(217, 245, 243, 0.28); }
+.pill.ghost:focus { background: var(--light); border-color: var(--light); }
+
+.logo { width: calc(40 * var(--u)); margin-top: calc(2 * var(--u)); opacity: 0.85; }
